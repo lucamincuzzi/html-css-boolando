@@ -4,6 +4,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  /* Debug */
+  /* border: 1px solid black; */
 }
 
 /* COMMON */
@@ -19,13 +21,20 @@ img {
   max-width: 100%;
 }
 
+.container {
+  width: 70%;
+  margin: 0 auto;
+}
+
 /* NAV */
 
-.nav-wrapper {
+nav .wrapper {
   display: flex;
   justify-content: space-around;
   align-items: center;
   position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
   background-color: #ff6900;
   color: white;
@@ -48,4 +57,25 @@ nav li {
 
 nav .logo-img {
   width: 20%;
+}
+
+/* MAIN */
+
+main .container {
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.col {
+  width: calc(100% / 3 - 1rem);
+  background-color: teal;
+  border: 1px black solid;
+  min-height: 40rem;
+  margin-bottom: 1rem;
 }
