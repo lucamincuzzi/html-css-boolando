@@ -33,7 +33,7 @@ nav .wrapper {
   justify-content: space-around;
   align-items: center;
   position: fixed;
-  z-index: 2;
+  z-index: 9999;
   top: 0;
   left: 0;
   width: 100%;
@@ -84,6 +84,7 @@ main .container {
   top: 10px;
   right: 0;
   width: 10%;
+  z-index: 3;
   background-color: white;
   font-size: 2rem;
   padding-left: .8rem;
@@ -103,7 +104,7 @@ main .container {
   position: relative;
 }
 
-.col:hover .main-image{
+.article-card:hover .main-image{
   z-index: -1;
 }
 
