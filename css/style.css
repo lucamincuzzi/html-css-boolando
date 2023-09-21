@@ -82,14 +82,14 @@ main .container {
 
 .secondary-image {
   position: absolute;
-  z-index: 0;
+  z-index: ;
 }
 
 .main-image {
   position: relative;
 }
 
-.main-image:hover {
+.col:hover .main-image{
   z-index: -1;
 }
 
@@ -109,7 +109,7 @@ main .container {
 
 .article-description {
   position: relative;
-  bottom: 20px;
+  bottom: 10px;
   color: black;
 }
 
