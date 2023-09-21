@@ -33,6 +33,7 @@ nav .wrapper {
   justify-content: space-around;
   align-items: center;
   position: fixed;
+  z-index: 2;
   top: 0;
   left: 0;
   width: 100%;
@@ -73,11 +74,72 @@ main .container {
 }
 
 .col {
+  position: relative;
   width: calc(100% / 3 - 1rem);
-  background-color: teal;
-  border: 1px black solid;
   min-height: 40rem;
   margin-bottom: 1rem;
+}
+
+.secondary-image {
+  position: absolute;
+  z-index: 0;
+}
+
+.main-image {
+  position: relative;
+}
+
+.main-image:hover {
+  z-index: -1;
+}
+
+.sale, .eco {
+  position: relative;
+  bottom: 60px;
+  padding: .3rem .5rem .3rem .5rem;
+  background-color: red;
+  color: white;
+  font-size: .9rem;
+  font-weight: 400;
+}
+
+.eco {
+  background-color: green;
+}
+
+.article-description {
+  position: relative;
+  bottom: 20px;
+  color: black;
+}
+
+.article-description span {
+  display: block;
+}
+
+.brand {
+  font-size: .8rem;
+}
+
+.product-name {
+  font-weight: bold;
+}
+
+.price {
+  display: flex;
+}
+
+.sale-price, .original-price {
+  font-size: .9rem;
+  padding-right: .5rem;
+}
+
+.sale-price {
+  color: red;
+}
+
+.original-price {
+  text-decoration: line-through;
 }
 
 /* FOOTER */
