@@ -76,8 +76,22 @@ main .container {
 .col {
   position: relative;
   width: calc(100% / 3 - 1rem);
-  min-height: 40rem;
   margin-bottom: 1rem;
+}
+
+.favorite {
+  position: absolute;
+  top: 10px;
+  right: 0;
+  width: 10%;
+  background-color: white;
+  font-size: 2rem;
+  padding-left: .8rem;
+  padding-right: 1rem;
+}
+
+.favorite:hover {
+  color: red;
 }
 
 .secondary-image {
