@@ -131,6 +131,10 @@ main .container {
   display: block;
 }
 
+.article-description.no-tags {
+  margin-top: 1rem;
+}
+
 .brand {
   font-size: .8rem;
 }
